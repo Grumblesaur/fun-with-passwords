@@ -11,3 +11,6 @@ crack: crack.o
 
 crack.o: crack.cpp
 	g++ -c crack.cpp -lcrypt
+
+clean:
+	rm -f *.o crack crypt

@@ -18,15 +18,13 @@ int main(int argc, char * argv[]) {
 	
 	cout << "\nThe salt: " << salt << endl;
 	
-	
 	while(!fin.eof()) {
 		getline(fin, line);
 		test_hash = crypt(line.c_str(), salt.c_str());
 		if (test_hash == hash) {
-			cout << "The password is '" << line << "'." << endl;
+			cout << "The password is ' " << line << " '." << endl;
 			break;
 		}
 	}	
-	
 	return 0;
 }
